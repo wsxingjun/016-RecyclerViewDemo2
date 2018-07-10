@@ -8,13 +8,16 @@ import android.view.Window;
 import android.widget.ImageView;
 import android.widget.Toast;
 
+/**
+ *  参考文章：https://blog.csdn.net/lmj623565791/article/details/38173061
+ */
 public class MainActivity extends AppCompatActivity {
 
 //    private RecyclerView mRv;
     private customRecyclerView mRv;
     private ImageView mIv;
 
-    private int[] mArrayPic = new int[]{R.mipmap.a,R.mipmap.b,R.mipmap.c,R.mipmap.d
+    private int[] mArrayPic = new int[]{R.mipmap.m,R.mipmap.j,R.mipmap.k,R.mipmap.l
         ,R.mipmap.e,R.mipmap.f,R.mipmap.g,R.mipmap.h,R.mipmap.a,R.mipmap.b,R.mipmap.c,R.mipmap.d
     };
     private String[] mArrayString = new String[]{"a","b","c","d","e","f","g","h","a","b","c","d"};
@@ -56,5 +59,9 @@ public class MainActivity extends AppCompatActivity {
                 mIv.setImageResource(mArrayPic[position]);
             }
         });
+
+
     }
+
+
 }
